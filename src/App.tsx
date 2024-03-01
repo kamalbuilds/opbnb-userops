@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { ConnectButton, useAccountInfo, useParticleConnect } from '@particle-network/connectkit';
 import { isEVMProvider } from '@particle-network/connectors';
-import { Avalanche } from '@particle-network/chains';
+import { Avalanche , opBNBTestnet } from '@particle-network/chains';
 import { AAWrapProvider, SendTransactionMode, SmartAccount } from '@particle-network/aa';
 import { ethers } from 'ethers';
 import { notification } from 'antd';
@@ -18,7 +18,7 @@ const App = () => {
     clientKey: process.env.REACT_APP_CLIENT_KEY,
     appId: process.env.REACT_APP_APP_ID,
     aaOptions: {
-      simple: [{ chainId: Avalanche.id, version: '1.0.0' }]
+      simple: [{ chainId: opBNBTestnet.id, version: '1.0.0' }]
     }
   });
 
