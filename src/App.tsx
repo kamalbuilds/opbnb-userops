@@ -50,7 +50,7 @@ const App = () => {
       message: 'Transaction Successful',
       description: (
         <div>
-          Transaction Hash: <a href={`https://snowtrace.io/tx/${txReceipt.transactionHash}`} target="_blank" rel="noopener noreferrer">{txReceipt.transactionHash}</a>
+          Transaction Hash: <a href={`https://opbnbscan.com/tx/${txReceipt.transactionHash}`} target="_blank" rel="noopener noreferrer">{txReceipt.transactionHash}</a>
         </div>
       )
     });
@@ -70,7 +70,7 @@ const App = () => {
       message: 'Transaction Successful',
       description: (
         <div>
-          Transaction Hash: <a href={`https://snowtrace.io/tx/${txResponse}`} target="_blank" rel="noopener noreferrer">{txResponse}</a>
+          Transaction Hash: <a href={`https://opbnbscan.com/tx/${txResponse}`} target="_blank" rel="noopener noreferrer">{txResponse}</a>
         </div>
       )
     });
@@ -91,7 +91,7 @@ return (
         <div className="profile-card">
           <h6>{address}</h6>
           <div className="balance-section">
-            <small>{balance} AVAX</small>
+            <small>{balance} tBNB</small>
             <button className="sign-message-button" onClick={executeUserOp}>Execute User Operation</button>
             <button className="sign-message-button" onClick={executeBatchUserOp}>Execute Batch User Operation</button>
             <button className="disconnect-button" onClick={disconnect}>Disconnect</button>
